@@ -33,7 +33,7 @@
         });
     
 #iphone4下，input获取焦点，输入框有时不会自动上移
-解决方案：添加js控制，需要给iPhone4专门加上过滤条件，不然其他类型iPhone的手机会连续滚动两次 
+解决方案：添加js控制，需要给iPhone4专门加上过滤条件，不然其他类型iPhone的手机会连续滚动两次，测试发现iPhone4下键盘弹起后innerHeight值会变小 
 
         var h = window.innerHeight;
         
