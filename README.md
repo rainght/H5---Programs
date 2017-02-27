@@ -36,8 +36,10 @@
 解决方案：添加js控制，需要给iPhone4专门加上过滤条件，不然其他类型iPhone的手机会连续滚动两次 
 
         var h = window.innerHeight;
+        
         $("#mobile").on("focus", function(){
             var $this = $(this);
+            
             if(window.innerHeight < h){ // 过滤条件 
                 $("html,body").animate({scrollTop: $this.offset().top},1000);
             }
